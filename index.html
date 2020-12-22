@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Quiz App</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="home-box custom-box">
+        <h3>Instructions : </h3>
+        <p>Total Number Of Questions : <span class="total-questions"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="option-container">
+
+        </div>
+        <div class="next-question-btn">
+            <button class="btn" type="button" onclick="next()">Next</button>
+        </div>
+        <div class="answers-indicator">
+
+        </div>
+    </div>
+
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td class="total-questions">5</td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td class="total-attempt"></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td class="total-correct"></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td class="total-wrong"></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td class="percentage">%</td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td class="total-score"> </td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+        <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+    </div>
+
+    <script src=" question.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
